@@ -10,12 +10,13 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"db:generate": "drizzle-orm generate:pg",
-		"db:push": "drizzle-orm push:pg",
+		"db:generate": "drizzle-kit generate:pg",
+		"db:push": "drizzle-kit push:pg",
 		"wrangler:dev": "wrangler pages dev .svelte-kit/cloudflare"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20240502.0",
+		"@paralleldrive/cuid2": "^2.2.2",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-cloudflare": "^4.4.0",
 		"@sveltejs/kit": "^2.0.0",
